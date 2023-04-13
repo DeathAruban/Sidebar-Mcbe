@@ -1,0 +1,32 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Death_Aruban"
+		],
+		"generated_with": {
+			"arucube": ["1.0.0"],
+			"dash": ["1.0.0"]
+		}
+	},
+	"header": {
+		"name": "Sidebar +",
+		"description": "Sidebar for Minecraft Bedrock using Scoreboard and Titleraw title",
+		"min_engine_version": [1,19,60],
+		"uuid": "a739d5cd-db89-4a6c-9e5c-8733c84f2ead",
+		"version": [1,0,0]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "503ed317-d76f-42f5-93cf-f017189f6b3d",
+			"version": [1,0,0]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "b5f2330d-d976-4765-bcf9-a8e5330d85a6",
+			"version": [1,0,0]
+		}
+	]
+}
