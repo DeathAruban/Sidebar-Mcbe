@@ -1,0 +1,55 @@
+{
+	"namespace": "sidebar_ui",
+
+	"component_texture_sidebar": {
+
+		//Logo Settings Base No Animation Sidebar
+
+		"$logo_sidebar_size":[102,22],
+		"$logo_sidebar_pos":[0,2],
+		"$logo_texture_sidebar":"uida/resources/sidebar_ui/logo_sidebar",
+		"$text_logo_base":"(#objective_sidebar_name = 'da.aru.logo')",
+
+
+		//Logo Settings Animation Sidebar
+
+		"$logo_anim_size":[102,22],
+		"$logo_anim_pos":[0,2],
+		"$logo_texture_anim":"uida/resources/sidebar_ui/logo_sidebar_anim",
+		"$text_logo_anim":"(#objective_sidebar_name = 'da.aru.anim')",
+		"$uv_size_anim":[ 1575, 363],
+
+		//Text Logo Setting Base/Animation Sidebar
+
+		"$text_logo_sidebar": "(not ((#objective_sidebar_name = 'da.aru.logo') or (#objective_sidebar_name = 'da.aru.anim') or (#objective_sidebar_name = 'da.logo.inv')))",
+
+		//Setting Background Sidebar
+
+		"$bg_sidebar":"uida/resources/sidebar_ui/border_scoreboard",
+		"$bg_alpha":1,
+		"$bg_position": [-1, 0],
+		"$anchor_from_bg": "right_middle",           
+        "$anchor_to_bg": "right_middle", 
+
+		//Setting Size and Font Text Sidebar
+
+		"$text_font_aru": "MinecraftTen",
+		"$text_size_aru" : "normal",   
+		"$text_shadow" : true 
+   
+	  },
+
+
+	  //Setting Logo Animation Sidebar
+	  
+	"anim_sidebar": {"anim_type": "uv","easing": "linear","from": "$uv_frame","to": "$uv_frame","duration": 0.2 },
+
+	"sidebar1@sidebar_ui.anim_sidebar": { "$uv_frame": [ 0, 0 ], "next": "@sidebar_ui.sidebar2" },
+	"sidebar2@sidebar_ui.anim_sidebar": { "$uv_frame": [ 0, 363], "next": "@sidebar_ui.sidebar3" },
+	"sidebar3@sidebar_ui.anim_sidebar": { "$uv_frame": [ 0, 726], "next": "@sidebar_ui.sidebar4" },
+	"sidebar4@sidebar_ui.anim_sidebar": { "$uv_frame": [ 0, 1089], "next": "@sidebar_ui.sidebar5" },
+	"sidebar5@sidebar_ui.anim_sidebar": { "$uv_frame": [ 0, 1452 ], "next": "@sidebar_ui.sidebar6" },
+	"sidebar6@sidebar_ui.anim_sidebar": { "$uv_frame": [ 0, 1089], "next": "@sidebar_ui.sidebar7" },
+	"sidebar7@sidebar_ui.anim_sidebar": { "$uv_frame": [ 0, 726], "next": "@sidebar_ui.sidebar8" },
+	"sidebar8@sidebar_ui.anim_sidebar": { "$uv_frame": [ 0, 363], "next": "@sidebar_ui.sidebar1" }
+}
